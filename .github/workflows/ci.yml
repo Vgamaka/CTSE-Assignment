@@ -28,8 +28,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=Vgamaka_CTSE-Event-Service
-            -Dsonar.organization=kavidumalshan99
+            -Dsonar.projectKey=Vgamaka_CTSE-Assignment
+            -Dsonar.organization=vgamaka
 
       - name: Login to ACR
         run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.ACR_LOGIN_SERVER }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
